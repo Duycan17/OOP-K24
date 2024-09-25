@@ -7,6 +7,18 @@ public class Student {
     private float mathScore;
     private float englishScore;
 
+    public Student(){
+        System.out.println("Default constructor called");
+    }
+
+    public Student(String name, int age, String address, float mathScore, float englishScore) {
+        this.name = name;
+        this.age = age;
+        this.address = address;
+        this.mathScore = mathScore;
+        this.englishScore = englishScore;
+    }
+
     public String getName() {
         return name;
     }
