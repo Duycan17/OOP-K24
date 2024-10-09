@@ -69,7 +69,8 @@ public class Student {
                 ", englishScore=" + englishScore +
                 '}';
     }
+
     public float getAverageScore() {
-        return (mathScore + englishScore) / 2;
+        return (this.getMathScore() + this.getEnglishScore()) / 2;
     }
 }
