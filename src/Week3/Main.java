@@ -12,6 +12,12 @@ public class Main {
         Student student2 = new Student("Nguyen Van D",21,"Ha Noi",9,9);
         students.add(student2);
         students.add(new Student("Nguyen Van E", 22, "Ha Noi", 10, 10));
-
+        String name ="Nguyen Van E";
+        // Get first student in list of students
+        for (int i = 0;i <= students.size() - 1 ;i++){
+        if (students.get(i).getName().equals(name)){
+            System.out.println("Student with name: "+name+" exists in Vector");
+        }
+    }
     }
 }
