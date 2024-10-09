@@ -1,34 +1,22 @@
 package Week3;
 
-import Week3.Student;
-
-import java.util.Scanner;
 import java.util.Vector;
 
 public class Main {
     public static void main(String[] args) {
         Vector<Student> students = new Vector<Student>();
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Enter student name: ");
-        String name = scanner.nextLine();
-
-        System.out.print("Enter student age: ");
-        int age = scanner.nextInt();
-        scanner.nextLine(); // consume newline
-
-        System.out.print("Enter student address: ");
-        String address = scanner.nextLine();
-
-        System.out.print("Enter student math score: ");
-        float mathScore = scanner.nextFloat();
-
-        System.out.print("Enter student english score: ");
-        float englishScore = scanner.nextFloat();
-
-        Student student = new Student(name, age, address, mathScore, englishScore);
-        students.add(student);
-
-        System.out.println("Student added: " + student);
-    }
+        students.add(new Student("Nguyen Van A", 20, "Ha Noi", 9, 8));
+        students.add(new Student("Nguyen Van B", 21, "Ha Noi", 7, 8));
+        Student student1 = new Student("Nguyen Van C",20,"Ha Noi",8,9);
+        students.add(student1);
+        Student student2 = new Student("Nguyen Van D",21,"Ha Noi",9,9);
+        students.add(student2);
+        students.add(new Student("Nguyen Van E", 22, "Ha Noi", 10, 10));
+        String name ="Nguyen Van E";
+        // Get first student in list of students
+        for (int i = 0;i <= students.size() - 1 ;i++){
+        if (students.get(i).getName().equals(name)){
+            System.out.println("Student with name: "+name+" exists in Vector");
+        }
+    }}
 }
