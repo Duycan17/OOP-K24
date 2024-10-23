@@ -5,7 +5,7 @@ import Week3.Student;
 import java.util.Scanner;
 import java.util.Vector;
 
-public class Main {
+public class Management {
     public static void main(String[] args) {
         Vector<Student> students = new Vector<Student>();
         Scanner scanner = new Scanner(System.in);
